@@ -1,0 +1,23 @@
+@use "../global" as g;
+.suggestion {
+  margin-top: 1.25em;
+
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: g.$font-c-secondary;
+    margin-bottom: 1.2em;
+
+    .title {
+      min-width: 200px;
+    }
+    a {
+      width: 100%;
+      text-align: right;
+      color: g.$font-c-primary;
+      font-weight: 600;
+    }
+  }
+}

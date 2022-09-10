@@ -1,0 +1,16 @@
+@use "../global" as g;
+.Stories {
+  display: flex;
+  align-content: center;
+  margin: 2em 0 1.5em 0;
+  height: 7.4em;
+  overflow: hidden;
+  background: g.$bck-white;
+  border: 1px solid g.$boarder-c-grey;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 640px) {
+  .Stories {
+    margin: 0 0 0.5em 0;
+  }
+}

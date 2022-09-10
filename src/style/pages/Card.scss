@@ -1,0 +1,78 @@
+@use "../global" as g;
+
+.Card {
+  border: 1px solid g.$boarder-c-grey;
+  background: g.$bck-white;
+  margin-bottom: 3.5em;
+  border-radius: 3px;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em;
+
+    // .profile {
+    //   margin-bottom: 0;
+    // }
+    .cardButton {
+      font-size: 1.4em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .cardImage {
+    width: 100%;
+    display: block;
+  }
+  .likedBy {
+    display: flex;
+    padding-left: 1em;
+
+    span {
+      font-size: 0.75em;
+      margin-left: 0.5em;
+      padding-top: 0.5em;
+    }
+  }
+  .comments {
+    margin-bottom: 0.75em;
+  }
+  .timePosted {
+    font-size: 0.6em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    color: g.$font-c-secondary;
+    border-bottom: 1px solid g.$boarder-c-grey-secondary;
+  }
+  .addComment {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    padding: 1.5em 1.25em;
+
+    .commentText {
+      color: g.$font-c-secondary;
+    }
+    .postText {
+      color: g.$link-color-secondary;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Card {
+    border: none;
+    background: g.$bck-grey;
+    margin-bottom: 0.75em;
+
+    .addComment {
+      display: none;
+    }
+    .timePosted {
+      border: none;
+    }
+  }
+}

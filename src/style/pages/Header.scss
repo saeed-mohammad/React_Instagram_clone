@@ -1,0 +1,57 @@
+@use "./../global" as g;
+header {
+  //   height: 60px;
+  z-index: 99;
+  background: g.$bck-white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid g.$boarder-c-grey;
+
+  nav {
+    @include g.flex-center;
+    justify-content: space-around;
+    padding: 1rem 0 0.5rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    .logo {
+      width: 103px;
+
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .search {
+      @include g.flex-center;
+      padding: 0.5rem 0.5rem;
+      min-width: 265px;
+      border-radius: 8px;
+      background: g.$bck-grey;
+      cursor: text;
+
+      p {
+        opacity: 0.5;
+        letter-spacing: 0.5px;
+      }
+
+      .icon {
+        opacity: 0.4;
+        font-size: 15px;
+        margin-right: 5px;
+      }
+    }
+    .menu {
+      font-size: 1.5rem;
+      @include g.flex-center;
+      gap: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .search {
+    display: none !important;
+  }
+}

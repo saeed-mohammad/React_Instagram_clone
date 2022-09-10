@@ -1,0 +1,16 @@
+@use "../global/" as g;
+
+.Comments {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4em;
+  padding-left: 1.5em;
+  font-size: 0.75em;
+
+  .accountName {
+    font-weight: 600;
+  }
+  .comment {
+    margin-left: 0.5em;
+  }
+}

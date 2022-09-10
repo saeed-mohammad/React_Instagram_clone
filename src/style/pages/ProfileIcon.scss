@@ -1,0 +1,35 @@
+@use "../global" as g;
+
+.storyBorder {
+  padding: 2px;
+  background: linear-gradient(
+    200deg,
+    g.$grad-one 25%,
+    g.$grad-two 50%,
+    g.$grad-three 75%,
+    g.$grad-four 100%
+  );
+  border-radius: 50%;
+}
+.profileIcon {
+  border-radius: 50%;
+  background: 2px solid g.$bck-white;
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.small {
+    width: 25px;
+    height: 25px;
+  }
+  &.medium {
+    width: 35px;
+    height: 35px;
+  }
+  &.large {
+    width: 50px;
+    height: 50px;
+  }
+}

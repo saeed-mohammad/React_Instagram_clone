@@ -1,0 +1,21 @@
+@use "../global/" as g;
+
+.CardMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1em;
+
+  .interAction {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    font-size: 1.4em;
+    margin-right: 0.7em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
